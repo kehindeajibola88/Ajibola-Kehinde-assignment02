@@ -21,7 +21,7 @@ function sumOfNumbers(arrayOfNumbers) {
     return sumOfNumbers
 }
 sumOfNumbers([1,1,3,5])
-// assignment.sumOfNumbers = sumOfNumbers;
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -34,17 +34,17 @@ function countEvenNumbers(arrayOfNumbers) {
     if(typeof arrayOfNumbers === 'string') return
     let count = 0
     for (i in arrayOfNumbers) {
-        if (i % 2 == 0) {
-            count += 1
+        if (arrayOfNumbers[i] % 2 === 0) {
+           count += 1
+            
         }
     }
-    //console.log(count)
+    console.log(count)
     return count
-    return arrayOfNumbers.length;
 }
 
-countEvenNumbers([2, 4, 5, 5])
-// assignment.countEvenNumbers = countEvenNumbers;
+countEvenNumbers([1, 2, 4, 5, 5])
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
